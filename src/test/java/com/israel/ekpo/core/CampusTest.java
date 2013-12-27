@@ -19,7 +19,6 @@ public class CampusTest {
         this.employee2 = new Employee();
         this.student  = new Student();
 
-
         this.employee.setEmployeeId(4355039);
         this.employee.setName("Joshua Ekpo");
         this.employee.setAge(5);

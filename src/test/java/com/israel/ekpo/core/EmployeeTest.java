@@ -13,7 +13,6 @@ public class EmployeeTest {
 
         this.employee = new Employee();
 
-
         this.employee.setEmployeeId(4355039);
         this.employee.setName("Joshua Ekpo");
         this.employee.setAge(5);

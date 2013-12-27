@@ -8,6 +8,7 @@ public class StudentTest {
 
     private Student student;
 
+    // This will be call before every @Test is run
     @Before
     public void setUp(){
 
