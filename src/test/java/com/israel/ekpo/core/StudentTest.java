@@ -24,6 +24,6 @@ public class StudentTest {
     @Test
     public void testStudentProperties() {
         Assert.assertTrue(student.isMarried());
-        Assert.assertEquals(444, student.getAge());
+        Assert.assertEquals(44, student.getAge());
     }
 }
