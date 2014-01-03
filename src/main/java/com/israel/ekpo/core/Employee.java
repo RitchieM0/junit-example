@@ -1,9 +1,11 @@
 package com.israel.ekpo.core;
 
+import com.israel.ekpo.people.Person;
 
-public class Employee extends com.israel.ekpo.people.Person {
 
-    private int employeeId;
+public class Employee extends Person {
+
+	private int employeeId;
 
     public Employee() {
         super();
@@ -13,9 +15,8 @@ public class Employee extends com.israel.ekpo.people.Person {
     public int getEmployeeId() {
         return employeeId;
     }
-
+    
     public void setEmployeeId(int employeeId) {
         this.employeeId = employeeId;
     }
-
 }
