@@ -20,25 +20,75 @@ public class EmployeeTest {
 		// (e) Verify that the employee is an adult
 		// (f) Verify that the employee is not allowed to drink alcohol
 		
-		Employee emp = new Employee();
-		emp.setAge(19);
+		Employee actualEmployee = new Employee();
+		actualEmployee.setAge(19);
 		
-		Assert.assertEquals(19, emp.getAge());
-		Assert.assertTrue(emp.isAllowedToSmokeCigarette());
-		Assert.assertFalse(emp.isTeenager());
-		Assert.assertFalse(emp.isInfant());
-		Assert.assertTrue(emp.isAdult());
-		Assert.assertFalse(emp.isAllowedToDrinkAlcohol());
+		
+		Employee expectedEmployee = new Employee();
+		expectedEmployee.setAge(19);
+		
+		Assert.assertEquals(expectedEmployee, actualEmployee);
+		
+		/**
+		Assert.assertEquals(19, actualEmployee.getAge());
+		Assert.assertTrue(actualEmployee.isAllowedToSmokeCigarette());
+		Assert.assertFalse(actualEmployee.isTeenager());
+		Assert.assertFalse(actualEmployee.isInfant());
+		Assert.assertTrue(actualEmployee.isAdult());
+		Assert.assertFalse(actualEmployee.isAllowedToDrinkAlcohol());
+		*/
 	}
+	
 	
 	@Test
 	public void testEmployeeAgeLimits2() {
 		
-		// Repeat same as in method testEmployeeAgeLimits1 but for age 15
+		// Repeat same as in method testEmployeeAgeLimits1 but for age 15:
+		
+		// (a) Verify that the employee age is actually the same as what we specified on the object
+		// (b) Verify that the employee is not allowed to smoke
+		// (c) Verify that the employee is a teenager
+		// (d) Verify that the employee is not an infant
+		// (e) Verify that the employee is not an adult
+		// (f) Verify that the employee is not allowed to drink alcohol
+		
+		Employee emp = new Employee();
+		emp.setAge(15);
+		
+		Assert.assertEquals(15, emp.getAge());
+		Assert.assertFalse(emp.isAllowedToSmokeCigarette());
+		Assert.assertTrue(emp.isTeenager());
+		Assert.assertFalse(emp.isInfant());
+		Assert.assertFalse(emp.isAdult());
+		Assert.assertFalse(emp.isAllowedToDrinkAlcohol());
+		
 	}
 	
 	
+	@Test
+	public void testEmployeeAgeLimits3() {
+		
+		// Repeat same as in method testEmployeeAgeLimits1 but for age 5 for Joshua -my baby:
+		
+
+		// (a) Verify that the employee age is actually the same as what we specified on the object
+		// (b) Verify that the employee is not allowed to smoke
+		// (c) Verify that the employee is not a teenager
+		// (d) Verify that the employee is not an infant
+		// (e) Verify that the employee is not an adult
+		// (f) Verify that the employee is not allowed to drink alcohol
+		
+		Employee castMember = new Employee();
+		castMember.setAge(5);
+		
+		Assert.assertEquals(5, castMember.getAge());
+		Assert.assertFalse(castMember.isAllowedToSmokeCigarette());
+		Assert.assertFalse(castMember.isTeenager());
+		Assert.assertFalse(castMember.isInfant());
+		Assert.assertFalse(castMember.isAdult());
+		Assert.assertFalse(castMember.isAllowedToDrinkAlcohol());	
 	
+	}
 	
 	@Test 
 	public void testEmployeeName() {
